@@ -54,6 +54,8 @@ properties:
     type: array
     items:
       type: integer
+      minimum: 0
+additionalProperties: false
 required:
   - forecast_date
   - target
