@@ -6,13 +6,9 @@ on:
     branches: main
     paths:
       - 'data-processed/**'
-  push:
-    branches: main
-    paths:
-      - 'data-processed/**'
 
 jobs:
-  build:
+  validate-submission:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
